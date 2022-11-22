@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.container{
+    width: 25vw;
+    height: 65vh;
+    color: white;
+    padding: 30px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.container:hover{
+    height: 70vh;
+    transition: all 0.5s ease-out;
+}
+.cnt1, .cnt1Button{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cnt2, .cnt2Button{
+    background-color: hsl(184, 100%, 22%);
+}
+.cnt3, .cnt3Button{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.caption{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.icon{
+    margin-bottom: 36px;
+    position: relative;
+    animation: cargo 4s ease-out;
+    animation-iteration-count: infinite;
+}
+.attribution{
+    text-align: right;
+    margin-right: 10px;
+}
+.attribution a{
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+@keyframes cargo {
+    0%{left: 0px; top:0px}
+    50%{left: 100px; top:0px}
+    100%{left: 0px; top:0px}
+}
+p{
+    font-size: 13.8px;
+    line-height: 36px;
+    margin-bottom: 36px;
+}
+button{
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    width: 146px;
+    transition: all 0.5s ease-out;
+}
+.cnt1Button,.cnt2Button,.cnt3Button{
+    border-radius: 20px;
+}
+.cnt1Button:hover{
+    color:hsl(31, 77%, 52%) ;
+    background-color: white;
+}
+.cnt2Button:hover{
+    color:hsl(184, 100%, 22%) ;
+    background-color: white;
+}
+.cnt3Button:hover{
+    color:hsl(179, 100%, 13%) ;
+    background-color: white;
+}
+@media (max-width:768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container{
+        width: 90vw;
+        height: auto;
+    }
+    .cnt1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .cnt3{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .cnt1Button,.cnt2Button,.cnt3Button{
+        border-radius: 20px;
+    }
+    .attribution{
+        text-align: right;
+        margin-right: 10px;
+    }
+}
